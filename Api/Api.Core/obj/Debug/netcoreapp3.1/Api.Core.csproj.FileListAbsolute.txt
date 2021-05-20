@@ -1,9 +1,0 @@
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\bin\Debug\netcoreapp3.1\Api.Core.deps.json
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\bin\Debug\netcoreapp3.1\Api.Core.dll
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\bin\Debug\netcoreapp3.1\Api.Core.pdb
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\obj\Debug\netcoreapp3.1\Api.Core.csprojAssemblyReference.cache
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\obj\Debug\netcoreapp3.1\Api.Core.AssemblyInfoInputs.cache
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\obj\Debug\netcoreapp3.1\Api.Core.AssemblyInfo.cs
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\obj\Debug\netcoreapp3.1\Api.Core.csproj.CoreCompileInputs.cache
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\obj\Debug\netcoreapp3.1\Api.Core.dll
-D:\Projetos\Megaworks\TesteMegaworks\Api\Api.Core\obj\Debug\netcoreapp3.1\Api.Core.pdb
