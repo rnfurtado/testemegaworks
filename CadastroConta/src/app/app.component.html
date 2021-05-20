@@ -1,0 +1,216 @@
+<div class="container col-md-12">
+  <form [formGroup]="CadastroContaForm" (ngSubmit)="Cadastrar()">
+    <div class="row">
+      <div class=" container-fluid mt--6">
+        <div class=" card mb-4">
+          <div class=" card-header">
+            <h3 class=" mb-0">Dados da Conta Bancária</h3>
+          </div>
+          <div class=" card-body">
+            <div class=" row">
+              <div class=" form-group col-md-6">
+                <label class=" form-control-label" for="BancoId">
+                  Selecione o Banco
+                </label>
+                <select class=" form-control" id="BancoId" formControlName="BancoId">
+                  <option value="">Selecione o Banco</option>
+                  <option value="246">246 - Banco ABC Brasil S.A.</option>
+                  <option value="075">075 - Banco ABN AMRO S.A.</option>
+                  <option value="121">121 - Banco Agibank S.A.</option>
+                  <option value="025">025 - Banco Alfa S.A.</option>
+                  <option value="641">641 - Banco Alvorada S.A.</option>
+                  <option value="065">065 - Banco Andbank (Brasil) S.A.</option>
+                  <option value="096">096 - Banco B3 S.A.</option>
+                  <option value="024">024 - Banco BANDEPE S.A.</option>
+                  <option value="318">318 - Banco BMG S.A.</option>
+                  <option value="752">752 - Banco BNP Paribas Brasil S.A.</option>
+                  <option value="107">107 - Banco BOCOM BBM S.A.</option>
+                  <option value="063">063 - Banco Bradescard S.A.</option>
+                  <option value="036">036 - Banco Bradesco BBI S.A.</option>
+                  <option value="204">204 - Banco Bradesco Cartões S.A.</option>
+                  <option value="394">394 - Banco Bradesco Financiamentos S.A.</option>
+                  <option value="237">237 - Banco Bradesco S.A.</option>
+                  <option value="218">218 - Banco BS2 S.A.</option>
+                  <option value="208">208 - Banco BTG Pactual S.A.</option>
+                  <option value="473">473 - Banco Caixa Geral – Brasil S.A.</option>
+                  <option value="040">040 - Banco Cargill S.A.</option>
+                  <option value="739">739 - Banco Cetelem S.A.</option>
+                  <option value="233">233 - Banco Cifra S.A.</option>
+                  <option value="745">745 - Banco Citibank S.A.</option>
+                  <option value="756">756 - Banco Cooperativo do Brasil S.A. – BANCOOB</option>
+                  <option value="748">748 - Banco Cooperativo Sicredi S.A.</option>
+                  <option value="222">222 - Banco Credit Agricole Brasil S.A.</option>
+                  <option value="505">505 - Banco Credit Suisse (Brasil) S.A.</option>
+                  <option value="003">003 - Banco da Amazônia S.A.</option>
+                  <option value="083">083 - Banco da China Brasil S.A.</option>
+                  <option value="707">707 - Banco Daycoval S.A.</option>
+                  <option value="001">001 - Banco do Brasil S.A.</option>
+                  <option value="047">047 - Banco do Estado de Sergipe S.A.</option>
+                  <option value="037">037 - Banco do Estado do Pará S.A.</option>
+                  <option value="041">041 - Banco do Estado do Rio Grande do Sul S.A.</option>
+                  <option value="004">004 - Banco do Nordeste do Brasil S.A.</option>
+                  <option value="265">265 - Banco Fator S.A.</option>
+                  <option value="224">224 - Banco Fibra S.A.</option>
+                  <option value="612">612 - Banco Guanabara S.A.</option>
+                  <option value="012">012 - Banco Inbursa S.A.</option>
+                  <option value="604">604 - Banco Industrial do Brasil S.A.</option>
+                  <option value="653">653 - Banco Indusval S.A.</option>
+                  <option value="077">077 - Banco Inter S.A.</option>
+                  <option value="249">249 - Banco Investcred Unibanco S.A.</option>
+                  <option value="184">184 - Banco Itaú BBA S.A.</option>
+                  <option value="029">029 - Banco Itaú Consignado S.A.</option>
+                  <option value="479">479 - Banco ItauBank S.A</option>
+                  <option value="376">376 - Banco J. P. Morgan S.A.</option>
+                  <option value="074">074 - Banco J. Safra S.A.</option>
+                  <option value="217">217 - Banco John Deere S.A.</option>
+                  <option value="600">600 - Banco Luso Brasileiro S.A.</option>
+                  <option value="389">389 - Banco Mercantil do Brasil S.A.</option>
+                  <option value="370">370 - Banco Mizuho do Brasil S.A.</option>
+                  <option value="746">746 - Banco Modal S.A.</option>
+                  <option value="456">456 - Banco MUFG Brasil S.A.</option>
+                  <option value="169">169 - Banco Olé Bonsucesso Consignado S.A.</option>
+                  <option value="212">212 - Banco Original S.A.</option>
+                  <option value="623">623 - Banco PAN S.A.</option>
+                  <option value="611">611 - Banco Paulista S.A.</option>
+                  <option value="643">643 - Banco Pine S.A.</option>
+                  <option value="747">747 - Banco Rabobank International Brasil S.A.</option>
+                  <option value="633">633 - Banco Rendimento S.A.</option>
+                  <option value="120">120 - Banco Rodobens S.A.</option>
+                  <option value="422">422 - Banco Safra S.A.</option>
+                  <option value="033">033 - Banco Santander (Brasil) S.A.</option>
+                  <option value="743">743 - Banco Semear S.A.</option>
+                  <option value="630">630 - Banco Smartbank S.A.</option>
+                  <option value="366">366 - Banco Société Générale Brasil S.A.</option>
+                  <option value="464">464 - Banco Sumitomo Mitsui Brasileiro S.A.</option>
+                  <option value="082">082 - Banco Topázio S.A.</option>
+                  <option value="634">634 - Banco Triângulo S.A.</option>
+                  <option value="655">655 - Banco Votorantim S.A.</option>
+                  <option value="610">610 - Banco VR S.A.</option>
+                  <option value="119">119 - Banco Western Union do Brasil S.A.</option>
+                  <option value="081">081 - BancoSeguro S.A.</option>
+                  <option value="021">021 - BANESTES S.A. Banco do Estado do Espírito Santo</option>
+                  <option value="755">755 - Bank of America Merrill Lynch Banco Múltiplo S.A.</option>
+                  <option value="250">250 - BCV – Banco de Crédito e Varejo S.A.</option>
+                  <option value="144">144 - BEXS Banco de Câmbio S.A.</option>
+                  <option value="017">017 - BNY Mellon Banco S.A.</option>
+                  <option value="070">070 - BRB – Banco de Brasília S.A.</option>
+                  <option value="104">104 - Caixa Econômica Federal</option>
+                  <option value="320">320 - China Construction Bank (Brasil) Banco Múltiplo S.A.</option>
+                  <option value="477">477 - Citibank N.A.</option>
+                  <option value="487">487 - Deutsche Bank S.A. – Banco Alemão</option>
+                  <option value="064">064 - Goldman Sachs do Brasil Banco Múltiplo S.A.</option>
+                  <option value="062">062 - Hipercard Banco Múltiplo S.A.</option>
+                  <option value="269">269 - HSBC Brasil S.A. – Banco de Investimento</option>
+                  <option value="492">492 - ING Bank N.V.</option>
+                  <option value="652">652 - Itaú Unibanco Holding S.A.</option>
+                  <option value="341">341 - Itaú Unibanco S.A.</option>
+                  <option value="488">488 - JPMorgan Chase Bank, National Association</option>
+                  <option value="399">399 - Kirton Bank S.A. – Banco Múltiplo</option>
+                  <option value="128">128 - MS Bank S.A. Banco de Câmbio</option>
+                  <option value="254">254 - Paraná Banco S.A.</option>
+                  <option value="125">125 - Plural S.A. – Banco Múltiplo</option>
+                  <option value="751">751 - Scotiabank Brasil S.A. Banco Múltiplo</option>
+                  <option value="118">118 - Standard Chartered Bank (Brasil) S/A–Bco Invest.</option>
+                  <option value="095">095 - Travelex Banco de Câmbio S.A.</option>
+                  <option value="129">129 - UBS Brasil Banco de Investimento S.A.</option>
+                </select>
+                <div *ngIf="submitted && CadastroContaForm.controls.BancoId.errors" class="text-danger">
+                  <div *ngIf="CadastroContaForm.controls.BancoId.errors.required">O Banco é obrigatório
+                  </div>
+                </div>
+              </div>
+              <div class="form-group  col-md-2">
+                <div class=" form-group"><label class=" form-control-label" for="NumeroConta"> Número da Conta
+                  </label><input class=" form-control" id="NumeroConta" formControlName="NumeroConta"
+                    placeholder="Número da Conta" type="text">
+                  <div *ngIf="submitted && CadastroContaForm.controls.NumeroConta.errors" class="text-danger">
+                    <div *ngIf="CadastroContaForm.controls.NumeroConta.errors.required">O número da conta é obrigatório
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group  col-md-2">
+                <div class=" form-group"><label class=" form-control-label" for="NumeroAgencia"> Número da Agência
+                  </label><input class=" form-control" id="NumeroAgencia" formControlName="NumeroAgencia"
+                    placeholder="Número da Agência" type="text">
+                  <div *ngIf="submitted && CadastroContaForm.controls.NumeroAgencia.errors" class="text-danger">
+                    <div *ngIf="CadastroContaForm.controls.NumeroAgencia.errors.required">O número da agência é
+                      obrigatório
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" form-group col-md-2">
+                <label class=" form-control-label" for="Situacao">
+                  Situação
+                </label>
+                <select class=" form-control" id="Situacao" formControlName="Situacao">
+                  <option value="1">Ativo</option>
+                  <option value="0">Inativo</option>                  
+                </select>               
+              </div>
+              <div class="form-group  col-md-3">
+                <div class=" form-group"><label class=" form-control-label" for="CpfCnpj"> CPF/CNPJ do Titular
+                  </label><input class=" form-control" id="CpfCnpj" formControlName="CpfCnpj"
+                    placeholder="CPF/CNPJ do Titular" type="text">
+                  <div *ngIf="submitted && CadastroContaForm.controls.CpfCnpj.errors" class="text-danger">
+                    <div *ngIf="CadastroContaForm.controls.CpfCnpj.errors.required">O Cpf/Cnpj é obrigatório
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group  col-md-6">
+                <div class=" form-group"><label class=" form-control-label" for="Nome"> Nome/Razão Social
+                  </label><input class=" form-control" id="Nome" formControlName="Nome"
+                    placeholder="Nome/Razão Social" type="text">
+                  <div *ngIf="submitted && CadastroContaForm.controls.Nome.errors" class="text-danger">
+                    <div *ngIf="CadastroContaForm.controls.Nome.errors.required">O Nome/Razão Socila é obrigatório
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" form-group col-md-3"><label class="form-control-label" for="DataAbertura"> Date </label>
+                <input class=" form-control" id="DataAbertura" formControlName="DataAbertura" type="date">
+                <div *ngIf="submitted && CadastroContaForm.controls.DataAbertura.errors" class="text-danger">
+                  <div *ngIf="CadastroContaForm.controls.DataAbertura.errors.required">A data de abertura é obrigatória
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" style="text-align: center;">
+                <button type="submit" class="btn btn-primary">{{EventValue}}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-striped">
+        <tr>
+          <td>ID</td>
+          <td>Nome/Razão Social</td>
+          <td>CPF/CNPJ</td>
+          <td>Banco</td>
+          <td>Conta</td>
+          <td>Agência</td>
+          <td>Data Abertura</td>
+          <td>Edita</td>
+          <td>Deleta</td>
+        </tr>
+        <tr *ngFor="let d of data">
+          <td>{{d.ContaId}}</td>
+          <td>{{d.Nome}}</td>
+          <td>{{d.CpfCnpj}}</td>
+          <td>{{d.BacoId}}</td>
+          <td>{{d.NumeroConta}}</td>
+          <td>{{d.NumeroAgencia}}</td>
+          <td>{{d.DataAbertura}}</td>
+          <td><a (click)="EditData(d)" class="btn btn-warning">Edita</a></td>
+          <td><a (click)="deleteData(d.ContaId)" class="btn btn-danger">Deleta</a></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</div>
